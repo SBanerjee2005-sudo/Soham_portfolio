@@ -29,14 +29,13 @@ export function Skills() {
 
   // Programming Languages with "progress" labels
   const programmingSkills = [
-    { name: 'C', level: 'Intermediate', percentage: 70 },
-    { name: 'Python', level: 'Advanced', percentage: 90 },
-    { name: 'Java', level: 'Intermediate', percentage: 75 },
+    { name: 'C', level: 'Advanced', percentage: 90 },
+    { name: 'Python', level: 'Intermediate', percentage: 75 },
+    { name: 'Java', level: 'Intermediate', percentage: 70 },
     { name: 'C++', level: 'Intermediate', percentage: 70 },
-    { name: 'SQL', level: 'Advanced', percentage: 85 },
-    { name: 'HTML', level: 'Advanced', percentage: 95 },
-    { name: 'CSS', level: 'Advanced', percentage: 90 },
-    { name: 'JavaScript', level: 'Intermediate', percentage: 75 },
+    { name: 'SQL', level: 'Intermediate', percentage: 75 },
+    { name: 'HTML', level: 'Intermediate', percentage: 75 },
+    { name: 'CSS', level: 'Intermediate', percentage: 70 },
   ];
 
   // Pill badge skills
