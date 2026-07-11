@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-background: #020617;
+  --color-card: #0F172A;
+  --color-accent: #3B82F6;
+  --color-accent-secondary: #06B6D4;
+  --color-textPrimary: #FFFFFF;
+  --color-textSecondary: #9CA3AF;
+  
+  --radius-xl: 20px;
+  
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-textPrimary font-sans antialiased selection:bg-accent selection:text-white;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-card/80 backdrop-blur-md border border-white/5 rounded-[20px] shadow-[0_8px_30px_rgb(0,0,0,0.12)];
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent-secondary;
+  }
+}
