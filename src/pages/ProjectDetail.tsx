@@ -291,7 +291,7 @@ export function ProjectDetail() {
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Challenges</h3>
               <p className="text-textSecondary leading-relaxed">
-                Throughout the development lifecycle, ensuring optimal performance and handling complex state management presented significant hurdles. Balancing the model's accuracy with computational efficiency required meticulous tuning, while integrating diverse architectural patterns demanded strict attention to clean code principles.
+                {project.challenges || "Throughout the development lifecycle, ensuring optimal performance and handling complex state management presented significant hurdles. Balancing the model's accuracy with computational efficiency required meticulous tuning, while integrating diverse architectural patterns demanded strict attention to clean code principles."}
               </p>
             </Card>
           </motion.section>
@@ -307,7 +307,7 @@ export function ProjectDetail() {
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Lessons Learned</h3>
               <p className="text-textSecondary leading-relaxed">
-                This project reinforced the importance of modular architecture and robust data pipelines. Deeply analyzing model behavior under varied inputs highlighted edge cases early, while implementing full-stack solutions solidified an understanding of seamless client-server communication and rigorous testing methodologies.
+                {project.lessonsLearned || "This project reinforced the importance of modular architecture and robust data pipelines. Deeply analyzing model behavior under varied inputs highlighted edge cases early, while implementing full-stack solutions solidified an understanding of seamless client-server communication and rigorous testing methodologies."}
               </p>
             </Card>
           </motion.section>

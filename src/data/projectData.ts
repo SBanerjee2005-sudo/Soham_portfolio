@@ -23,6 +23,8 @@ export interface ProjectDetails {
     f1?: string;
     r2?: string;
   };
+  lessonsLearned?: string;
+  challenges?: string;
 }
 
 export const projectData: Record<string, ProjectDetails> = {
@@ -33,17 +35,17 @@ export const projectData: Record<string, ProjectDetails> = {
     description: 'A machine learning application that predicts whether a loan application is likely to be approved based on customer information.',
     overview: 'CreditWise addresses the financial sector’s need for rapid and consistent loan approval decisions. By leveraging historical customer data, this project aims to predict loan defaults and approvals with high accuracy, ultimately reducing risk for lenders while providing faster feedback to applicants.',
     features: [
-      'Interactive Prediction',
-      'Data Preprocessing',
-      'Model Evaluation',
-      'Clean User Interface',
-      'Responsive Design'
+      'Loan Approval Prediction',
+      'Confidence Score',
+      'Random Forest Classifier',
+      'Interactive Streamlit Interface',
+      'Applicant Risk Assessment'
     ],
-    technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Streamlit', 'FastAPI'],
+    technologies: ['Python', 'Streamlit', 'Scikit-learn', 'Pandas', 'NumPy', 'Joblib'],
     isMachineLearning: true,
     links: {
-      github: '#',
-      demo: '#'
+      github: 'https://github.com/SBanerjee2005-sudo/Creditwise_Loan_Approval_System',
+      demo: 'https://creditwise-loan-approval-predictor-platform.streamlit.app/'
     },
     modelInfo: {
       algorithm: '[Placeholder: Random Forest Classifier]',
@@ -52,7 +54,9 @@ export const projectData: Record<string, ProjectDetails> = {
       precision: '[Placeholder: 82%]',
       recall: '[Placeholder: 88%]',
       f1: '[Placeholder: 85%]'
-    }
+    },
+    lessonsLearned: 'This project improved my understanding of data preprocessing, feature engineering, model training, and evaluation using Scikit-learn. It also gave me hands-on experience building and deploying a Streamlit application with Git and GitHub while creating a clean, user-friendly interface.',
+    challenges: 'The main challenges were selecting the right features, improving model performance through feature engineering, and ensuring consistent data preprocessing during prediction. Deploying the trained model with Streamlit and managing the required project dependencies also provided valuable practical experience.'
   },
   'shopsmart': {
     id: 'shopsmart',

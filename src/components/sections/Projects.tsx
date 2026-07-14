@@ -28,16 +28,17 @@ export function Projects() {
       category: "Machine Learning",
       icon: <Landmark size={32} className="text-accent" />,
       description: "A machine learning application that predicts whether a loan application is likely to be approved based on customer information.",
-      technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Streamlit", "FastAPI"],
+      technologies: ["Python", "Streamlit", "Scikit-learn", "Pandas", "NumPy", "Joblib"],
       features: [
-        "Interactive prediction",
-        "Data preprocessing",
-        "Model evaluation",
-        "Clean user interface"
+        "Loan Approval Prediction",
+        "Confidence Score",
+        "Random Forest Classifier",
+        "Interactive Streamlit Interface",
+        "Applicant Risk Assessment"
       ],
       links: {
-        demo: "#",
-        github: "#",
+        demo: "https://creditwise-loan-approval-predictor-platform.streamlit.app/",
+        github: "https://github.com/SBanerjee2005-sudo/Creditwise_Loan_Approval_System",
       }
     },
     {
